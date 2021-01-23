@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
       - name: Sync
         env:
-        dest: ssh-user@example.com:/mydir/wp-content/themes/mytheme
+        dest: raman@3.139.87.142:/var/www/html/codedeploy
         run: |
           echo "${{secrets.DEPLOY_KEY}}" > deploy_key
           chmod 600 ./deploy_key
